@@ -1,0 +1,724 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    font-family: Arial;
+    -webkit-user-select: none;
+    /* Safari */                      /*for removing slider */
+    -ms-user-select: none;
+    /* IE 10 and IE 11 */
+    user-select: none;
+    /* Standard syntax */
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+header {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url('..//Images//mainimg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    /*for text should not copy */
+}
+
+
+ @media screen and (max-width:600px) {
+    header {
+        width: 100%;
+        height: 660px;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url('..//Images//mobile1.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+
+    }
+} 
+
+.navbar {
+    width: 100%;
+    height: 11vh;
+    background: none;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+.title h2,h6 {
+    transition: 1s;
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+    color: white;
+}
+
+.title1:hover {
+    transform: scale(1.1);
+    z-index: 1;
+}
+
+.menu {
+    font-size: 1.3rem;
+    color: white;
+
+}
+
+
+ @media screen and (max-width:600px) {
+    .title h2 {
+        font-size: 0.9rem;
+    }
+
+    .title h6 {
+        font-size: 0.5rem;
+    }
+
+    section a {
+        font-size: 0.5rem;
+        font-weight: 500;
+    }
+
+    .quote h2 {
+        font-size: 0.9rem;
+        letter-spacing: 1px;
+    }
+
+    .overview {
+        margin-left: 50px;
+        height: 150px;
+        width: 300px;
+    }
+
+    .overview p,
+    h1 {
+        margin-top: 10px;
+        margin-left: 20px;
+        margin-right: 10px;
+        letter-spacing: 0.4px;
+    }
+
+    .box {
+        display: inline;
+        flex-wrap: nowrap;
+    }
+
+    .b {
+        height: 300px;
+        width: 300px;
+        display: table-row;
+    }
+
+    .horizontal {
+        height: 150px;
+        width: 100%;
+    }
+
+    #id1 {
+        font-size: 0.7rem;
+    }
+
+    #id2 {
+        font-size: 0.6rem;
+    }
+
+    .detail h5 {
+        font-size: 0.6rem;
+    }
+
+    .button1 a {
+        height: 20px;
+        width: 120px;
+
+    }
+
+    .text2 h1 {
+        font-size: 1.3rem;
+    }
+
+    .text2 h3 {
+        font-size: 0.9rem;
+    }
+
+    .text2 a {
+        height: 20px;
+        width: 120px;
+    }
+
+} 
+
+.menu a {
+
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    margin-right: 40px;
+    transition: 0.3s all;
+}
+ @media screen and (max-width:600px) {
+    .menu a {
+        margin-right: 20px;
+        transition: 0.3s all;
+        font-size: 1.4rem;
+        color: #000;
+        display: block;
+        margin-top: 40px;
+        margin-bottom: 20px;
+    }  
+} 
+.menu a:hover {
+    color: #00b894;
+}
+@media screen and (max-width:600px){
+    a:hover,a:active{
+        background: none;
+        color: #00b894;
+    }
+}
+.checkbtn{
+    font-size:30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+     display: none; 
+}
+label #btn{
+
+}
+label #cancle{
+    cursor: pointer;
+    display: none;
+}
+@media screen and (max-width:600px){
+    .checkbtn{
+        display: block;
+    }
+    .menu ul{
+        position: fixed;
+        width: 250px;
+        margin-left: 90px;
+        height: 300px;
+        background-color: rgb(247, 245, 242);  
+        top: 80px;
+        left:-100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+    #check:checked ~ label #btn{
+        display: none;
+    }
+    #check:checked ~ label #cancle{
+        display: block;
+    }
+}
+
+
+main {
+    width: 100%;
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+section h3 {
+    font-size: 3rem;
+    font-weight: 200;
+    letter-spacing: 3px;
+    color: white;
+    margin-bottom: 15px;
+    transition: 1s;
+}
+
+section h3:hover {
+    transform: scale(1.1);
+    z-index: 1;
+}
+
+section h1 {
+    color: white;
+    font-size: 1rem;
+    font-weight: 200;
+    text-shadow: 2px 1px 5px black;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+ @media screen and (max-width:600px) {
+    section h3 {
+        font-size: 2rem;
+    }
+}
+@media screen and (max-width:600px) {
+    section h1 {
+        font-size: 0.8rem;
+        letter-spacing: 0px;
+    }
+}
+
+
+section a {
+    padding: 12px 30px;
+    border-radius: 4px;
+    outline: none;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    font-weight: 500;
+    text-decoration: none;
+    letter-spacing: 1px;
+
+}
+@media screen and (max-width:600px) {
+    section a {
+        padding: 7px 17px;
+        font-size: 0.6rem;
+        
+    }
+} 
+/* 
+
+@media screen and (max-width:600px){
+    section a{
+        padding: 6px 15px;
+    }
+    section .bt1{
+        font-size: 0.6rem;
+      
+    }
+
+} */
+section .bt1 {
+    background: #00b894;
+    color: #000;
+}
+
+/* quote */
+.quote {
+    text-align: center;
+    height: 200px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    /*x axis centre */
+    display: flex;
+    background-color: papayawhip;
+}
+
+.quote h2 {
+    letter-spacing: 1.5px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-shadow: 1px 1px 1px black;
+}
+
+/*hero-section*/
+.hero-section {
+    background-color: papayawhip;
+}
+
+.overview {
+    margin-left: 320px;
+    height: 300px;
+    width: 800px;
+    background-color: wheat;
+    padding: 20px 0px 15px;
+    margin-bottom: 50px;
+}
+
+
+ @media screen and (max-width:600px) {
+    .overview {
+        height: 350px;
+        width: 310px;
+        margin-left: 24px;
+        margin-bottom: 50px;
+    }
+
+    .overview h1 {
+        letter-spacing: 0.7px;
+        font-size: 25px;
+        margin-top: 5px;
+    }
+
+} 
+
+.overview p,h1 {
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 40px;
+    margin-right: 50px;
+    letter-spacing: 0.7px;
+}
+
+.overview h1 {
+    transition: 0.3s ease-in;
+}
+
+.overview h1:hover {
+    transform: translateY(-10px);
+    color: papayawhip;
+}
+
+#para {
+    font-size: 1.2rem;
+}
+
+ 
+@media screen and (max-width:600px) {
+    #para {
+        font-size: 1rem;
+        height: 300px;
+        width: 250px;
+        margin-left: 24px;
+    }
+
+}
+
+.b {
+    margin-top: 20px;
+    height: 500px;
+    width: 550px;
+    background-color: white;
+    padding: 20px 0px 15px;
+    margin-bottom: 50px;
+    flex-wrap: wrap;
+    /*content will display in one-by one form */
+}
+
+.b p {
+    font-size: 1.3rem;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+
+}
+
+.box {
+    z-index: 1;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: papayawhip;
+    margin-top: 90px;
+}
+
+
+  @media screen and (max-width:600px) {
+    .box {
+        display: flex;
+        flex-direction: column
+    }
+    .img1{
+        height: 300px;
+        width:  320px;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .img2{
+        height: 300px;
+        width:  320px;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .b p {
+        font-size: 0.9rem;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 20px;
+        height: 50px;
+        width:  320px;
+    }
+    .b {
+        height: 450px;
+    }
+    
+}  
+
+/*box1*/
+.box1 h2 {
+    margin-left: 20px;
+    margin-bottom: 35px;
+    transition: all 0.3s ease;
+}
+
+.box1 h2:hover {
+    padding-left: 10px;
+}
+
+.img1 {
+    margin-left: 20px;
+    margin-right: 20px;
+    height: 300px;
+    background-size: cover;
+    margin-bottom: 10px;
+    margin-top: 15px;
+}
+
+/*box 2*/
+.img2 {
+    margin-left: 20px;
+    margin-right: 20px;
+    height: 300px;
+    background-size: cover;
+    margin-bottom: 10px;
+    margin-top: 15px;
+}
+
+.box2 h2 {
+    margin-left: 20px;
+    margin-bottom: 35px;
+    transition: all 0.3s ease-in-out;
+}
+
+.box2 h2:hover {
+    padding-left: 10px;
+}
+
+/*button */
+.button1 {
+    display: flex;
+    margin-bottom: 100px;
+    margin-left: 35px;
+    margin-top: 30px;
+    justify-content: center;
+    /*x axis centre */
+    transform: 1s;
+}
+
+.button1 :hover {
+    transform: scale(1.1);
+    z-index: 1;
+    transition: 0.5s all ease-in;
+}
+.button1 a {
+    background: #00b894;
+    color: #000;
+    border-radius: 4px;
+    height: 35px;
+    width: 190px;
+    text-decoration: none;
+    /*remove underline from anchor tag */
+    margin-top: 10px;
+    align-items: center;
+    /* 4 lines for text middle in the box */
+    text-align: center;
+    display: flex;
+    justify-content: center;
+
+}
+
+.buttonn {
+    height: 50px;
+    width: 100%;
+    color: papayawhip;
+}
+
+@media screen and (max-width:600px){
+    .button1 a {
+        height: 35px;
+        width: 190px;
+    }
+    .button1{
+        margin-top: 0%;
+        margin-bottom: 50px;
+        margin-left: 15px;
+    }
+
+} 
+/*horizontal */
+.horizontal {
+    height: 300px;
+    width: 100%;
+    background-color: #9db3e9;
+    z-index: 1;
+    display: flex;
+    flex-wrap: wrap;
+    /*content will display in one-by one form */
+}
+
+ @media screen and (max-width:600px){
+    .horizontal {
+        height: 200px;
+        width:360px;
+
+    }
+   
+} 
+
+.img3 {
+    height: 300px;
+    width: 420px;
+    margin-left: 230px;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+ 
+@media screen and (max-width:600px){
+    .img3 {
+        height: 150px;
+        width: 120px;
+        margin-right: 100px;
+        margin-left: 20px;
+        margin-top: 25px;
+    }
+} 
+.text2 {
+    margin-top: 80px;
+    align-items: center;
+    font-size: 1.3rem;
+}
+
+@media screen and (max-width:600px)
+{
+    .text2 h1{
+        height: 20px;
+        width:120px; 
+       font-size: 1.1rem;
+       margin-left:2px ;
+       
+    }
+} 
+.text2 h3 {
+    margin-left: 50px;
+    margin-top: 20px;
+}
+
+@media screen and (max-width:600px){
+    .horizontal{
+        display: flex;
+    }
+    .text2 h1{
+        margin-bottom: 30px;
+
+    }
+} 
+.text2 i {
+    margin-right: 7px;
+}
+
+.horizontal a {
+    background: rgb(107, 175, 244);
+    color: #000;
+    border-radius: 4px;
+    height: 30px;
+    width: 180px;
+    text-decoration: none;
+    /*remove underline from anchor tag */
+    margin-top: 10px;
+    align-items: center;
+    /* 4 lines for text middle in the box */
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-left: 50px;
+    font-size: 0.9rem;
+}
+
+ @media screen and (max-width:600px){
+    .horizontal a{
+        height: 17px;
+        width: 120px;
+        margin-left: 10px;
+    }
+    .horizontal  h4{
+        font-size: 0.6rem;
+    }
+    .line{
+        margin-right: 20px;
+        margin-top: 25px;
+    }
+    .text2 h3{
+        margin-left: 10px;
+    }
+} 
+/** anything */
+
+.anything {
+    height: 250px;
+    width: 100%;
+}
+@media screen and (max-width:600px){
+    .anything{
+        height: 100px;
+        width: 100%;
+    }
+}
+
+/**footer **/
+.fmain {
+    height: 300px;
+    background-color: black;
+    color: white;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    font-size: 15px;
+}
+
+.detail {
+    color: whitesmoke;
+    font-size: 0.9rem;
+
+}
+
+.detail a i {
+    color: #00b894;
+    margin-top: 20px;
+    margin-right: 10px;
+}
+
+.detail h3 {
+    color: whitesmoke;
+    font-size: 0.9rem;
+    margin-top: 20px;
+}
+
+.detail h5 {
+    margin-top: 50px;
+}
+
+#id1 i {
+    margin-right: 5px;
+}
+
+#id3 i {
+    margin-right: 5px;
+}
+
+#id2 i {
+    margin-right: 5px;
+}
+
+ @media screen and (max-width:600px){
+    .detail{
+        font-size: 0.9rem;
+    }
+    #id1{
+        font-size: 0.6rem;
+    }
+    #id2{
+        font-size: 0.6rem;
+    }
+    #id3{
+        font-size: 0.6rem;
+    }
+    .detail a{
+        font-size: 0.6rem;
+    }
+    .detail h5{
+        font-size: 0.5rem;
+    }
+
+} 
+
+

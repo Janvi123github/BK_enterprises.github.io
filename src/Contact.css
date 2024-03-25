@@ -1,0 +1,357 @@
+*{
+    margin:0%;
+    padding:0%;
+    font-family: Arial;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+}
+::-webkit-scrollbar {
+    display: none;
+}
+header{
+    width: 100%;
+    height: 100vh;
+    background-image:linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)), url('..//Images//img7.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+@media screen and (max-width:600px) {
+    header {
+        width: 100%;
+        height: 660px;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url('..//Images//img21.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+
+    }
+} 
+.navbar{
+    width: 100%;
+    height: 11vh;
+    background: none;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+}
+.title1{
+    font-size: 1.9rem;
+    margin-left: 20px;
+    color:white;
+    display: flex;
+    align-items: center;
+}
+@media screen and (max-width:600px) {
+    .title h2 {
+        font-size: 1.2rem;
+        width: 150px;
+    }
+
+    section a {
+        font-size: 0.5rem;
+        font-weight: 500;
+    }
+}
+.menu{
+    font-size: 1.3rem;
+    color:white;
+}
+.menu a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    margin-right: 40px;
+    transition: 0.3s all;
+}
+@media screen and (max-width:600px) {
+    .menu a {
+        margin-right: 20px;
+        transition: 0.3s all;
+        font-size: 1.4rem;
+        color: #000;
+        display: block;
+        margin-top: 40px;
+        margin-bottom: 20px;
+    }  
+} 
+.menu a:hover{
+    color: #00b894;
+}
+@media screen and (max-width:600px){
+    a:hover,a:active{
+        background: none;
+        color: #00b894;
+    }
+}
+.checkbtn{
+    font-size:30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+     display: none; 
+}
+label #btn{
+
+}
+label #cancle{
+    cursor: pointer;
+    display: none;
+}
+@media screen and (max-width:600px){
+    .checkbtn{
+        display: block;
+    }
+    .menu ul{
+        position: fixed;
+        width: 250px;
+        margin-left: 90px;
+        height: 300px;
+        background-color: rgb(247, 245, 242);  
+        top: 80px;
+        left:-100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+    #check:checked ~ label #btn{
+        display: none;
+    }
+    #check:checked ~ label #cancle{
+        display: block;
+    }
+}
+main{
+    width: 100%;
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+section h3{
+    font-size: 3rem;
+    font-weight: 200;
+    letter-spacing: 3px;
+    color:white;
+    margin-bottom: 15px;
+    transition: 1s;
+}
+section h3:hover{
+    transform: scale(1.1);
+    z-index: 1;
+}
+section h1{
+    color: white;
+    font-size: 1rem;
+    font-weight: 200;
+    text-shadow: 2px 1px 5px black;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+@media screen and (max-width:600px) {
+    section h3 {
+        font-size: 2rem;
+    }
+}
+@media screen and (max-width:600px) {
+    section h1 {
+        font-size: 0.8rem;
+    }
+} 
+section a{
+    padding: 12px 30px;
+    border-radius: 4px;
+    outline: none;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    font-weight: 500;
+    text-decoration: none;
+    letter-spacing: 1px;
+    
+}
+
+section .bt1{
+    background: #00b894;
+    color: #000;
+    margin-top: 50px;
+}
+
+
+/*hero-section */
+.q1{
+    text-align: center;
+    height: 200px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;/*x axis centre */
+    display: flex;
+    background-color:  papayawhip;
+}
+.q1 h2{
+    width: 1000px;
+    letter-spacing:1.5px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-shadow: 1px 1px 1px black;
+}
+@media screen and (max-width:600px) {
+    .q1{
+        height: 100px;
+        width: 100%;
+    }
+    .q1 h2{
+        font-size: 1.1rem;
+        margin-top: 50px;
+        margin-left: 4px;
+        margin-right:5px;
+    }
+} 
+.hero-section{
+    background-color: papayawhip;
+    height: 1200px;
+}
+@media screen and (max-width:600px){
+    .hero-section{
+        height: 1000px;
+    }
+}
+.address{   
+    margin-left: 300px;
+    height: 350px;
+    width: 870px;
+    background-color:wheat;
+    padding: 20px 0px 15px;
+    margin-bottom: 50px;
+    border-bottom-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+.address li{
+    margin-top: 35px;
+    margin-left: 60px;
+    margin-right: 50px;
+    letter-spacing: 0.7px;
+    font-size: 1.3rem;
+}
+@media screen and (max-width:600px){
+    .address{
+        height: 320px;
+        width: 310px;
+        margin-left: 25px;
+        margin-top: 35px;
+    }
+    .address li{
+        margin-top: 25px;
+        font-size: 0.9rem;
+        margin-left: 40px;
+    }
+  
+}
+
+/*map */
+.map{
+    height: 400px;
+    width: 80%; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 150px;
+}
+iframe{
+    height: 400px;
+    width: 80%; 
+}
+.map h2{
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+@media screen and (max-width:600px){
+    .map{
+        height: 400px;
+    width: 80%; 
+    margin-left: 40px;
+    }
+    .map h2{
+        font-size: 1.5rem;
+    margin-bottom: 20px;
+    }
+    iframe{
+        height: 300px;
+        width: 97%; 
+    }
+}
+
+
+
+
+
+/**footer **/
+.fmain{
+    height: 300px;
+    background-color:black;
+    color: white;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    font-size: 15px;
+}
+.detail{
+    color:whitesmoke;
+    font-size: 0.9rem;
+
+}
+.detail a i{
+    color: #00b894 ;
+    margin-top: 20px;
+    margin-right: 10px;
+}
+.detail h3{
+    color: whitesmoke;
+    font-size: 0.9rem;
+    margin-top: 20px;
+}
+.detail h5{
+    margin-top: 50px;
+ }
+ #id1 i{
+    margin-right: 5px;
+}
+#id3 i{
+    margin-right: 5px;
+}
+#id2 i{
+    margin-right: 5px;
+}
+
+@media screen and (max-width:600px){
+ 
+    .detail{
+        font-size: 0.9rem;
+    }
+    #id1{
+        font-size: 0.6rem;
+    }
+    #id2{
+        font-size: 0.6rem;
+    }
+    #id3{
+        font-size: 0.6rem;
+    }
+    .detail a{
+        font-size: 0.6rem;
+    }
+    .detail h5{
+        font-size: 0.5rem;
+    }
+
+} 
