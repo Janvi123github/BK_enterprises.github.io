@@ -33,7 +33,7 @@ body{
 header {
     width: 100%;
     height: 100vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url('..//Images//mainimg.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url('Album//home.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     cursor: pointer;
@@ -45,7 +45,7 @@ header {
     header {
         width: 100%;
         height: 660px;
-        background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url('..//Images//mobile1.jpg');
+        background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url('Album//mobile1.jpg');
         background-repeat: no-repeat;
         background-size: cover;
 
@@ -84,6 +84,9 @@ header {
 
 
  @media screen and (max-width:600px) {
+    .navbar {
+        height: 6vh;
+    }
     .title h2 {
         font-size: 1.0rem;
         width: 150px;
@@ -256,6 +259,10 @@ section h1 {
     margin-bottom: 25px;
 }
  @media screen and (max-width:600px) {
+    
+main {
+    height: 35vh;
+}
     section h3 {
         font-size: 2rem;
     }
