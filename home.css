@@ -33,7 +33,7 @@ body{
 header {
     width: 100%;
     height: 100vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url('Album//home.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url('home.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     cursor: pointer;
@@ -45,7 +45,7 @@ header {
     header {
         width: 100%;
         height: 660px;
-        background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url('Album//mobile1.jpg');
+        background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url('mobile1.jpg');
         background-repeat: no-repeat;
         background-size: cover;
 

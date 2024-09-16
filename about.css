@@ -27,7 +27,7 @@ body{
 header{
     width: 100%;
     height: 100vh;
-    background-image:linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)), url('Album//about.jpg');
+    background-image:linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)), url('about.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     cursor: pointer;
@@ -37,7 +37,7 @@ header{
     header {
         width: 100%;
         height: 660px;
-        background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url('Album//about.jpg');
+        background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url('about.jpg');
         background-repeat: no-repeat;
         background-size: cover;
 
@@ -342,16 +342,16 @@ input:checked + label .description {
 }
 
 .card[for="c1"] {
-    background-image: url('Album//i1.jpg');
+    background-image: url('i1.jpg');
 }
 .card[for="c2"] {
-    background-image: url('Album//i4.jpg');
+    background-image: url('i4.jpg');
 }
 .card[for="c3"] {
-    background-image: url('Album//i3.jpg');
+    background-image: url('i3.jpg');
 }
 .card[for="c4"] {
-    background-image: url('Album//i2.jpg');
+    background-image: url('i2.jpg');
 }
 
 @media (max-width: 600px){
